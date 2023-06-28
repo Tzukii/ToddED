@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>ToddEd - Lunar Lasers</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../static/img/favicon.png" rel="icon">
+  <link href="../static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../static/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../static/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Techie
+  * Updated: May 30 2023 with Bootstrap v5.3.0
+  * Template URL: https://bootstrapmade.com/techie-free-skin-bootstrap-3/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+  <div id="modal">
+    <img src="../static/img/loading.gif"></img>
+  </div>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-between">
+       <a href="index.html" class="logo"><img src="../static/img/logo.png" alt="" class="img-fluid"></a>
+      <h1 class="logo"><a href="index.html">ToddEd</a></h1>
+      
+      
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#services">Services</a></li> -->
+          <li><a class="nav-link scrollto" href="#features">Examples</a></li>
+          <!-- <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li> -->
+          <li><a class="nav-link scrollto"
+href="#team">Team</a></li>
+          <li><a class="nav-link scrollto"
+href="#future">Future development</a></li>
+          <li><a class="getstarted scrollto" href="#services">Try it Out</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container-fluid" data-aos="fade-up">
+      <div class="row justify-content-center">
+        <div class="col-xl-5 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h1>Automatically Generated TED Talks</h1>
+          <h2>Endless education and inspiration a click away</h2>
+          <div><a href="#services" class="btn-get-started scrollto">Try it Out</a></div>
+        </div>
+        <div class="col-xl-4 col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="150">
+          <img src="../static/img/hero-img.png" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+  
+  <main id="main">
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Try It Out</h2>
+          <p>Give our trained model a try!</p>
+        </div>
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-6 col-md-8 d-flex align-items-start" id="input-container" style="cursor:text" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-orange w-100 pt-2 pb-2">
+              <input id="model-input" class="border-0 w-100" style="outline:none; text-align: center" type="text"
+                placeholder="Input a title or topic..."></input>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-3">
+          <div class ="col-lg-2 col-md-4">
+            <button class="w-100 btn btn-outline-danger" id="generate">Generate!</button>
+          </div>
+
+      </div>
+        <div class="row gy-4 justify-content-center mt-3">
+
+          <div class="col-lg-6 col-md-8 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box iconbox-orange w-100 pt-5 pb-5">
+              <p id="output-text">AI Output will be here...</p>
+            </div>
+          </div>
+        </div>
+        
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="150">
+            <img src="static/img/IMG_0126.jpeg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 contentdata-aos="fade-right">
+            <div class="section-title">
+            <h2> About</h2>
+            </div>
+            <h3> AI Camp</h3>
+            <p>AI Camp teaches future leaders about AI, coding, and how to work through creating impressive AI products and tech internships. During our 3 week of online camp we learned about NLP and concepts like transformers and backpropagation. Using the skills we learned throughout AI camp we were tasked with creating a final project which we call ToddEd.</p>
+                <h3>About our project</h3>
+            <p> We created an AI Model that generates Ted Talks. The purpose of this product so that people can efficiently get advice, help, and motivation with issues/topics that they are interested in. </p>
+            <h3>Model </h3>
+            <p>To build this product, we used GPT2Neo. GPT2 is an auto completion model, so our users can input a title or topic and as a result, the model will generate a Ted talk transcript the user is looking for.</p>
+            </ul>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Example Outputs</h2>
+          <p>Our program has made some amazing and questionable outputs through out the development of our program. Here are some examples of a few.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column align-items-lg-center">
+            <div class="icon-box mt-5 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-server"></i>
+              <h4>The Internet TedTalk</h4>
+              <p>In the TEDTalk titled "The future of the internet" the speaker says: I'm going to talk about the future of the internet. I'm going to talk about the future of the internet. "I'm going to talk about the future of the internet. And I'm going to talk about the future of the internet."</p>
+            </div>
+            <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-globe"></i>
+              <h4>V2</h4>
+              <p>Let me ask myself the question: What is the future of the world? And I'm not a physicist, I'm not a scientist, and I'm not a nuclear physicist. But I'm a global, global, globalist, globalist environmentalist. And I believe that the future of the world is global politics.</p>
+            </div>
+          </div>
+          <div class="image col-lg-6 order-1 order-lg-2 " data-aos="zoom-in" data-aos-delay="100">
+            <img src="static/img/IMG_0128.jpeg" alt="" class="img-fluid">
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column align-items-lg-center">
+            <div class="icon-box mt-1" data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-chat"></i>
+              <h4>V3</h4>
+              <p>Education is made possible by a new global free speech revolution. It's called speech in the positive sense. It's in positive language that I'm going to talk today. It's in language that I'm going to talk about how free the human being is in the age of today. Free the human being for good news. Now, the first time I heard about the new free speech revolution is in the US. In fact, it's the first time that I've ever heard about the new free speech revolution</p>
+            </div>
+          </div>
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column align-items-lg-center">
+            <div class="icon-box mt-1" data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-leaf"></i>
+              <h4>V4</h4>
+              <p>I'm going to talk about mushrooms. And this is not just some of my favorite things  they're all edible, and we can grow them in our homes right now! So let me start with an example for you guys. You know that one? It's called The Mushroom Diet because it's actually a diet designed specifically for people who eat too much food. Now, if you want to get more nutritious foods out there than what your body needs then go here. But first, how do you make sure that when you consume enough food, you have enough nutrients from plants or animals? Well, as someone who eats less meat, vegetables, fruits and whole grains, I think mushrooms are really important. They help us digest proteins, carbohydrates and fats better so that we don't waste energy. In fact, they provide us with protein at twice its normal level.</p> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Features Section -->
+
+    <!-- ======= Our Team Section ======= -->
+    <section id="team" class="testimonials">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Our Team - Lunar Lasers</h2>
+          <p>We are the Lunar Lasers. We created this product so we can learn more about NLP development! We all enjoy listening to TED talks, so we chose this fun idea. The purpose of this product so that people can efficiently get advice, help, and motivation with issues/topics that they are interested in. </p>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="team-member">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  My favorite part of creating ToddEd was learning how to visualize the data. That's the kind of skill that will be useful in just about every situation.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="../static/img/team/gabriel.jpg" class="testimonial-img" alt="">
+                <h3>Gabriel Steele</h3>
+                <h4>Machine Learning Engineer </h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="team-member">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  I had a lot of fun at AI Camp end enjoyed learning about NLP. It was a completely new experience for me and I learned a lot.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="../static/img/team/shivam.png" class="testimonial-img" alt="">
+                <h3>Shivam Maji</h3>
+                <h4>Chief Technology Officer &amp; Visual Designer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="team-member">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                 AI Camp was an amazing experience. But getting to work with such a talented group of people made making this product just that much better.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="../static/img/team/rishil.jpg" class="testimonial-img" alt="">
+                <h3>Rishil Saxena</h3>
+                <h4>Machine Learning Engineer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="team-member">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  This camp was definitely an eye-opening introduction to machine learning! It was so much fun to learn about industry-scale AI and career paths.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="../static/img/team/vindhya.png" class="testimonial-img" alt="">
+                <h3>Vindhya Ganti</h3>
+                <h4>Front-end Engineer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="team-member">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  My favorite part about AI camp was getting to learn different concepts like machine learning to help build the model. These concepts will be useful to me in the future.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="../static/img/team/e'sabel.png" class="testimonial-img" alt="">
+                <h3>E'Sabel Merriweather</h3>
+                <h4>Front-end Engineer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="team-member">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  I enjoyed being here at AI camp and doing things I probably never would have tried outside of this camp. I believe everything I learned here will be helpful for me and it was a fun experience I enjoyed being a part of.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="../static/img/team/vincent.png" class="testimonial-img" alt="">
+                <h3>Vincent Chakkalakal</h3>
+                <h4>Data Analyst</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="team-member">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                I am grateful to AI camp for providing this       incredible learning platform. Being a Project mentor to these exceptional students has been a truly enriching experience. In all honesty, I have gained a tremendous amount of knowledge from them too. I wholeheartedly extend my best wishes to each and every one of them, hoping for their great success.      
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="../static/img/team/srijana.jpg" class="testimonial-img" alt="">
+                <h3>Srijana Raut</h3>
+                <h4>Project Mentor</h4>
+              </div>
+            </div>
+          </div>
+        </section><!-- End testimonial item --
+      </div>
+    </section> <!-- End Testimonials Section -->
+
+
+    <!-- ======= Future Section ======= -->
+    <section id="future" class="future section-bg">
+      <div class="container" data-aos="fade-up">
+        
+            <div class="section-title">
+            <h2> Future development</h2>
+            </div>
+            <div class="future-list">
+            <ul>
+              <li><i class="bi"></i> In the future we will have a website so that users can easily input titles or topics to generate new Ted Talks.</li>
+              <li><i class="bi"></i> We can add a section where users are able to save the Ted Talks that they can refrence later when need it.</li>
+              <li><i class="bi">
+              </i> This product could be used by Ted Talk fans, they can get quality wisdom quickly.</li>
+              <li><i class="bi"></i> If people want information/to study about a topic for a project or for fun, this could be be a useful resource </li>
+            </ul>
+            </div>
+        </div>
+      </div>
+        </section><!-- End future Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <!-- <section id="faq" class="faq">
+      <div class="container" data-aos="fade-up"> -->
+
+    <!--    <div class="section-title">
+          <h2>Other NLP Projects!</h2>
+          <p>Enjoyed our project? Check out these other cool text generation websites!</p>
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up" data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Presidential Harry Potter Debate <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                <p>
+                  Generate funny political wizarding content, featuring actual commentary from past presidential debates, with this text generation website, featuring GPT-2. 
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Motivational Quotes <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a> 
+              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                 Feeling down? Need some help from the internet? This Chatbot is great if you need a pick-me-up!
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">College Finder <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                 Applying to college? This Chatbot can find the school for you!
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">Team name #4 w/ link<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Short Description
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="500">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Team name #5 w/ link<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Short Description
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="600">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-6" class="collapsed">Team name #6 w/ link<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-6" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Short Description
+                </p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+      </div> -->
+  <!--</section> --> 
+    <!-- End Frequently Asked Questions Section --> 
+
+    <!-- ======= Contact Section ======= -->
+    
+          
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <!--<footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>ToddEd</h3>
+            <p>
+              A108 Adam Street <br>
+              New York, NY 535022<br>
+              United States <br><br>
+              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Join Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="copyright-wrap d-md-flex py-4">
+        <div class="me-md-auto text-center text-md-start">
+          <div class="copyright">
+            &copy; Copyright <strong><span>Techie</span></strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/techie-free-skin-bootstrap-3/ --><!--
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
+        </div>
+        <div class="social-links text-center text-md-right pt-3 pt-md-0">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </footer>--><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="../static/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../static/vendor/aos/aos.js"></script>
+  <script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../static/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../static/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../static/vendor/php-email-form/validate.js"></script>
+  
+
+
+  <!-- Template Main JS File -->
+  <script src="../static/js/main.js"></script>
+
+</body>
+
+</html>
